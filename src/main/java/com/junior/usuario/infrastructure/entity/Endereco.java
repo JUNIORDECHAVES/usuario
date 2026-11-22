@@ -1,17 +1,15 @@
 package com.junior.usuario.infrastructure.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
-@Getter // gera todos os metodo getters dos atributos.
-@Setter // gera todos os metodo setters dos atributos.
-@AllArgsConstructor // um construtor com todos os argumentos/atributos.
-@NoArgsConstructor // um construtor sem argumentos/atributos.
-@Entity // para aponta ao spring que essa clase é uma tabela do banco de dados.
-@Table(name = "endereco") // indica o nome da tabela utilizando o atributo name,
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@Entity
+@Table(name = "endereco")
+@Builder
 public class Endereco {
 
     @Id
